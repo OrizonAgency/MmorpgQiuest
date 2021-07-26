@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mmoquest",
+  "name": "MMO Quest mod",
+  "description": "It's a mod that aim to recreate a mmo quest systeme",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Augma"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
