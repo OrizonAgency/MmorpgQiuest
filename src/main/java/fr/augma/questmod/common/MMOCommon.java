@@ -1,6 +1,7 @@
 package fr.augma.questmod.common;
 
 import java.io.File;
+import java.io.IOException;
 
 public class MMOCommon {
 
@@ -8,7 +9,7 @@ public class MMOCommon {
 
     }
 
-    public void init() {
+    public void init() throws IOException {
 
     }
 }

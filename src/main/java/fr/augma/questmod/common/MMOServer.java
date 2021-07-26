@@ -6,6 +6,7 @@ import net.minecraftforge.fml.common.FMLCommonHandler;
 import org.apache.logging.log4j.Level;
 
 import java.io.File;
+import java.io.IOException;
 
 public class MMOServer extends MMOCommon {
 
@@ -29,6 +30,16 @@ public class MMOServer extends MMOCommon {
         if(!fQPlayerData.exists()) {
             fQPlayerData.mkdir();
             MMOQuest.getLogger().log(Level.INFO, "Création du dossier quest/playerdata");
+        }
+
+        File fJsonPD = new File(fQPlayerData.getAbsolutePath() + "/test.json");
+        if(!fJsonPD.exists()) {
+            try {
+                fJsonPD.createNewFile();
+                MMOQuest.getLogger().log(Level.INFO, "Création du fichier quest/playerdata/test.json");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
